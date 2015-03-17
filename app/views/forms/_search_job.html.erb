@@ -1,0 +1,82 @@
+<div id="search_form">
+	<%= form_tag "search" do %>	
+	<table width="100%" align="left">
+		<tr align="left">
+			<td><b>Name & Description<br></td>
+			<td><b>Salary Details</td>
+			<td><b>Organization & Agency</td>
+		</tr>
+
+		<tr>
+			<!--Name and description details-->
+			<td>
+				<table align="">
+					<tr>
+						<td>Title</td><td><%= text_field_tag "JobTitle", params[:JobTitle] %></td>
+					</tr>
+					<tr>
+						<td>Description</td><td><%= text_field_tag "JobSummary", params[:JobSummary] %></td>
+					</tr>
+					<tr>
+						<td>Location</td><td><%= text_field_tag "Locations", params[:Locations]%></td>
+					</tr>
+					<tr>
+						<td>Who may apply</td><td><%= text_field_tag "WhoMayApplyText", params[:WhoMayApplyText]%></td>
+					</tr>
+					<tr>
+						<td>WorkType</td><td><%= text_field_tag "WorkType", params[:WorkType]%></td>
+					</tr>
+					<tr>
+						<td>Schedule</td><td><%= text_field_tag "WorkSchedule", params[:WorkSchedule]%></td>
+					</tr>
+				</table>
+			</td>
+			<!--Salary details-->
+			<td valign="top">
+				<table align="">
+					<tr>
+						<td>Min</td><td><%= text_field_tag "SalaryMin", params[:SalaryMin]%></td>
+					</tr>
+					<tr>
+						<td>Max</td>
+						<td>
+							<!--Dont' dsiplay the max default salary-->
+							<% if params[:SalaryMax]==100000000 %> 
+								<%= text_field_tag "SalaryMax" %>
+							<%else%>
+								<%= text_field_tag "SalaryMax" ,params[:SalaryMax]%>
+							<% end %>
+						</td>
+					</tr>
+					<tr>
+						<td>Basis</td><td><%= text_field_tag "SalaryBasis" ,params[:SalaryBasis]%></td>
+					</tr>
+					<tr>
+						<td>Pay plan</td><td><%= text_field_tag "PayPlan" ,params[:PayPlan]%></td>
+					</tr>
+				</table>
+			</td>
+			<!--Organization dans agency details -->
+			<td valign="top">
+				<table align="">
+					<tr>
+						<td>Organisation</td><td><%= text_field_tag "OrganizationName", params[:OrganizationName] %></td>
+					</tr>
+					<tr>
+						<td>Agency</td><td><%= text_field_tag "AgencySubElement" ,  params[:AgencySubElement] %></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<table width="100%">
+				<tr>
+			
+			<td><b><%= @alert %></b></td>
+			<td align="right"><%= submit_tag "find", :style => "width:150px" %></td>
+		</tr>
+	</table>
+		</tr>
+	</table>
+	<% end %>
+</div>

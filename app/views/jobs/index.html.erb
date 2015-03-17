@@ -1,0 +1,70 @@
+<!-- Organization and agency are not used as search parameters -->
+<% if @jobs!=nil%>
+<h2>Search result</h2>
+<h5><%= @jobs.count%> jobs found</h5>
+	<% @jobs.each do |job| %>
+<h3>
+		<%= job.JobTitle %>
+</h3>
+		<%= render "/shared/job_info", job:job %>
+	<% end %>
+<% end %>
+
+
+<!-- Organization is used as search parameter -->
+<%if @found_oraganization_jobs!=nil%>
+<h2>Search result</h2>
+<h5>
+	<%= @jobs_count%> Jobs found in <%= @found_oraganization_jobs.count%> Organizations
+<h5>
+	<% @found_oraganization_jobs.each do |org| %>
+<!-- Number of found jobs by organizations -->
+		<% org.agencies.each do  |agency| %>
+			<% agency.jobs.each do  |job| %>
+<h4>
+				<%= job.JobTitle%>
+</h4>
+				<%= render "/shared/job_info", job:job %>
+			<%end%>
+		<%end%>
+	<%end%>
+<%end %>
+
+
+<!-- Agency is used as search parameter -->
+<%if @found_agency_jobs!=nil%>
+<h2>Search result</h2>
+<h5>
+	<%= @jobs_count%> Jobs found in <%= @found_agency_jobs.count%> agencies
+</h5>
+	<% @found_agency_jobs.each do |agency| %>
+<h3>
+		<%= agency.name %>
+</h3>
+		<% agency.jobs.each do  |job| %>
+<h4>
+			<%= job.JobTitle%>
+</h4>
+			<%= render "/shared/job_info", job:job %>
+		<%end%>
+	<%end%>
+<%end %>
+
+
+<!-- Both organization and agency are used as search parameters -->
+<%if @found_oraganization_agency_jobs!=nil %>
+<h2>Search result</h2>
+<h5>
+	<%= @jobs_count%> Jobs found in <%= @found_oraganization_agency_jobs.count%> organization and <%=@agencies_count %> agencies
+</h5>
+	<% @found_oraganization_agency_jobs.each do |org| %>
+		<% org.agencies.each do |agency| %>
+			<% agency.jobs.each do |job|%>
+<h5>
+	<%= job.JobTitle%>
+</h5>
+				<%= render "/shared/job_info", job:job %>
+			<%end%>
+		<%end%>
+	<% end %>
+<% end %>

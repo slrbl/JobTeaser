@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>JobTeaserApp</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="title">
+			<a href="/jobs/index"><h1>JobTeaser</h1></a>
+		</div>
+		<%= render "/forms/search_job"%>
+		<div id="yield">
+			<%= yield %>
+		</div>
+	</body>
+</html>

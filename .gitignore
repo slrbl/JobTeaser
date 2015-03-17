@@ -1,0 +1,16 @@
+*.sqlite3
+*.log
+Gemfile
+Gemfile.lock
+config/*
+log/*
+tmp/*
+doc/*
+log/*
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out

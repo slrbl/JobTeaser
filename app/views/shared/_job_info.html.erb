@@ -1,0 +1,25 @@
+<div id="job_desc">
+	<table>
+		<tr>
+			<td width="22%" >
+				<iframe width="300" height="300" frameborder="0" style="border:0" src="<%='https://www.google.com/maps/embed/v1/place?q='+job.Locations+'&key=AIzaSyDSEz5uREA01BNubLyGXeeO4IRZVtVE-Iw'%>"></iframe>
+			</td>
+			<td padding="50px" valign="top">
+				<%= job.JobSummary %>
+				<br><br>
+				<b>Locations: </b><%= job.Locations %>
+				<br><b>Salary: </b>$<%= job.SalaryMin %>-$<%= job.SalaryMax %> (<%= job.SalaryBasis %>)
+				<br><b>Pay plan: </b><%= job.PayPlan %>
+				<br><b>Who May Apply:</b><%= job.WhoMayApplyText%>
+				<br><b>AnnouncementNumber:</b><%= job.AnnouncementNumber%>
+				<br><b>ApplyOnlineURL:</b><%= job.ApplyOnlineURL%>
+				<br><b>WorkType:</b><%= job.WorkType%>
+				<br><b>WorkSchedule:</b><%= job.WorkSchedule%>
+				<br><b>Grade:</b><%= job.Grade%>
+				<br><b>Series:</b><%= job.Series%>
+				<br><b>Start/End:</b><%= job.StartDate%> to <%= job.EndDate%>
+				<br><b>Organization</b> <%= Organization.find(job.organization_id).name%> => <%= Agency.find(job.agency_id).name%>
+			</td>
+		</tr>
+	</table>
+</div>

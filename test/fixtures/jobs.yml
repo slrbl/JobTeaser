@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DocumentID: 1
+  JobTitle: MyString
+  SalaryMin: 1.5
+  SalaryMax: 1.5
+  SalaryBasis: 1.5
+  StartDate: 2015-03-13 23:22:55
+  EndDate: 2015-03-13 23:22:55
+  WhoMayApplyText: MyText
+  PayPlan: MyString
+  Series: MyString
+  Grade: MyString
+  WorkSchedule: MyString
+  WorkType: MyString
+  Locations: MyString
+  AnnouncementNumber: 1
+  JobSummary: MyText
+  ApplyOnlineURL: MyString
+
+two:
+  DocumentID: 1
+  JobTitle: MyString
+  SalaryMin: 1.5
+  SalaryMax: 1.5
+  SalaryBasis: 1.5
+  StartDate: 2015-03-13 23:22:55
+  EndDate: 2015-03-13 23:22:55
+  WhoMayApplyText: MyText
+  PayPlan: MyString
+  Series: MyString
+  Grade: MyString
+  WorkSchedule: MyString
+  WorkType: MyString
+  Locations: MyString
+  AnnouncementNumber: 1
+  JobSummary: MyText
+  ApplyOnlineURL: MyString

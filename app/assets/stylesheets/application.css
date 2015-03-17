@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+/* universal */
+
+
+
+
+html{
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	font-family: verdana, arial, helvetica, sans-serif;
+ }
+
+p{
+	font-size: 12px;
+}
+
+h1{
+	font-size: 30px;
+}
+
+h2{
+	font-size: 22px;
+}
+
+h3{
+	font-size: 18px;
+}
+
+h4{
+	font-size: 16px;
+}
+
+h5{
+	font-size: 14px;
+}
+
+table{
+	font-size: 12px;
+
+}
+
+#job_desc{
+	width: 90%;
+	background-color: WhiteSmoke;
+	font-size: 12px;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 2%;
+}
+
+#title{
+	position: fixed;
+    left:0px;
+    bottom:92%;
+    height:8%;
+    width:100%;
+    padding-left: 20px;
+    background:#383838;
+    font-size: 0.7vw;
+}
+
+#search_form{
+	background-color: WhiteSmoke;
+	position: fixed;
+	margin-left: 2%;
+	top: 10%;
+	height: 23%;
+	width: 50%;
+	border-radius: 10px;
+	padding: 10px;
+
+
+}
+
+	a{
+	text-decoration: none;
+	color:Gainsboro;
+}
+
+#yield{
+position: fixed;
+top:40%;
+padding-left: 10px;
+
+height:60%;
+overflow: scroll;
+width: 100%;
+background-color:white;
+
+
+}
+
+
