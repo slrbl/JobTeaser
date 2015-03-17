@@ -36,9 +36,9 @@ JobTeaser search web app
 
 2. How to get JobTeaser application up and running
 
-  # rake db:migrate
-  # rake db:seed [dataset_file]
-  # rails s
+   rake db:migrate
+   rake db:seed [dataset_file]
+   rails s
 
 3. The time spent to build the App
   - A first basic version took about 4 hours to be up and running
