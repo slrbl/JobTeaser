@@ -46,10 +46,9 @@ JobTeaser search web app
 
 4. Models design
 
-   ______________                   ________                  _____
-  |              |                 |        |                |     |
+
   | Organization |______________ * | Agency |_______________*| Job |
-  |______________|                 |________|                |_____|
+
 
 5. Enhancement
   - Add pagination if the number of found jobs exxeeds some limit (5 jobs for example)
