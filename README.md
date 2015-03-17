@@ -21,7 +21,8 @@ JobTeaser search web app
   Organization and agencies
     - Organization (Eg: Department Of Energy)
     - Agency (Eg: Power Administration)
-    At least one search criteria has to be used. if not, no search will be performed
+    
+  At least one search criteria has to be used. if not, no search will be performed
     The search results include:
       Stats
         - Number of found jobs
