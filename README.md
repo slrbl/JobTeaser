@@ -1,8 +1,11 @@
 # JobTeaser
 JobTeaser search web app
+
 1. About JobTeaser search engine:
+
   This application allows you to search a job using a set of parameters.
   It was developed in Ruby On Rails.
+
   Name and description parameters
     - Title
     - Description
@@ -27,18 +30,25 @@ JobTeaser search web app
         - Number of found jobs, organizations and agencies if organization and agency criterias were precised by the user
       Found job details
         - A list of the found jobs with their descriptions and geolocalization based on gmap
+
 2. How to get JobTeaser application up and running
-      - bundle instal
-      - rake db:migrate
-      - rake db:seed [your_json_dataset_file_path]
-      - rails s
+     - bundle install
+     - rake db:migrate
+     - rake db:seed [your_dataset_file_path]
+     - rails s
+
 3. The time spent to build the App
   - A first basic version took about 4 hours to be up and running
   - Optimizing the app, testing it and making it looking like it looks now took about 10 hour
+
 4. Models design
+
+
   | Organization |______________ * | Agency |_______________*| Job |
+
+
 5. Enhancement
   - Add pagination if the number of found jobs exxeeds some limit (5 jobs for example)
   - Add Accordion (jQuery) to display the job details only when the title is clicked
-  - Add a general gmap view to display all the found jobs (this sould be place next to the search form) 
+  - Add a general gmap view to display all the found jobs (this sould be place next to the search form)
   - Highlight the search strings in the results
