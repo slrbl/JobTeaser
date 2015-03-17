@@ -36,8 +36,9 @@ JobTeaser search web app
         - A list of the found jobs with their descriptions and geolocalization based on gmap
 
 2. How to get JobTeaser application up and running
+  $ bundle install 
   $ rake db:migrate
-  $rake db:seed [dataset_file]
+  $ rake db:seed [your_dataset_file_path]
   $ rails s
 
 3. The time spent to build the App

@@ -38,12 +38,12 @@ def add_agency_if_not_exist(model,name,organization_id)
 		return model.find_by_name(name).id
 	end
 end
-
+puts "Please wait until your database population is done.."
 hash_data.each do |h|
-	puts h.keys
+	#puts h.keys
 	jobs_set=h['JobData']
 
-	puts jobs_set.length
+	#puts jobs_set.length
 	jobs_set.each do |j|
 
 		organization_id=add_organization_if_not_exist(Organization,j['OrganizationName'])
@@ -54,16 +54,16 @@ hash_data.each do |h|
 			job=Job.new()
 			j.keys.each do |key|
 				if key!='OrganizationName' && key!='AgencySubElement'
-					puts key
+					#puts key
 					value=j[key]
 					if key=='SalaryMin' or key=='SalaryMax'
-						puts "+++++++++++++++"
-						puts value
-						puts "+++++++++++++++"
+						#puts "+++++++++++++++"
+						#puts value
+						#puts "+++++++++++++++"
 						value=get_float_from_string(value.to_s)
 
-						puts value
-						puts "+++++++++++++++"
+						#puts value
+						#puts "+++++++++++++++"
 					end
 					job.send("#{key}=",value)
 				end
