@@ -25,12 +25,11 @@ JobTeaser search web app
   At least one search criteria has to be used. if not, no search will be performed.
   The search results include:
   Stats
-        - Number of found jobs
-        - Number of found jobs and agencies if agency parameter was precised by the user
-        - Number of found jobs and organizations if organization criteria was precised by the user
-        - Number of found jobs, organizations and agencies if organization and agency criterias were precised by the user
-      Found job details
-        - A list of the found jobs with their descriptions and geolocalization based on gmap
+- Number of found jobs
+- Number of found jobs and agencies if agency parameter was precised by the user
+- Number of found jobs and organizations if organization criteria was precised by the user
+- Number of found jobs, organizations and agencies if organization and agency criterias were precised by the user
+- Found job details: A list of the found jobs with their descriptions and geolocalization based on gmaps.
 
 2. How to get JobTeaser application up and running
      - bundle install
