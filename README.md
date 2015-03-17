@@ -3,7 +3,8 @@ JobTeaser search web app
 
 1. About JobTeaser search engine:
   
-  This application allows you to search a job using a set of parameters
+  This application allows you to search a job using a set of parameters.
+  It was developed in Ruby On Rails.
   
   Name and description parameters
     - Title
@@ -35,10 +36,9 @@ JobTeaser search web app
         - A list of the found jobs with their descriptions and geolocalization based on gmap
 
 2. How to get JobTeaser application up and running
-
-   rake db:migrate
-   rake db:seed [dataset_file]
-   rails s
+  $ rake db:migrate
+  $rake db:seed [dataset_file]
+  $ rails s
 
 3. The time spent to build the App
   - A first basic version took about 4 hours to be up and running
